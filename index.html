@@ -57,8 +57,35 @@
     </div>
 </nav>
 <!-- banner Section -->
-<div>
-
+<div class="relative border-b-2 border-dashed border-gray-400 py-10 my-10">
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+      </div>
+      <!-- Banner Badge -->
+      <div class="sm:relative sm:mt-5 lg:right-5 lg:bottom-16 text-[#FFF] bg-[#131318] rounded-lg lg:absolute  p-5 lg:w-130 lg:h-30 ">
+        <h5 class="text-xl font-extrabold">Meet all the heroes from the field</h5>
+        <p class="text-xs font-medium">League membership rose to 10, then dropped, and held steady <br>at six from 1942 to 1967.</p>
+      </div>
 </div>
    </header>
    <main  class="container mx-auto bg-[#FFF]">
