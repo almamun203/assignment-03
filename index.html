@@ -38,11 +38,21 @@
 </head>
 <!-- colors #131318 #424247 -->
 <body class="manrope">
-   <header class=" container  mx-auto bg-[#FFF]">
+   <header class=" lg:container  lg:mx-auto bg-[#FFF] ">
     <!-- Navbar Section -->
     <nav class="flex justify-between items-center my-5">
+        <div class="lg:hidden dropdown dropdown-right">
+            <div tabindex="0" role="button" class="btn m-1"><i class="fa-solid fa-bars"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-600">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>   
     <h2 class="text-[#131318] text-3xl font-extrabold">Hockey<span class="text-red-600">’</span>s</h2>
-    <div class=" flex gap-4 text-sm font-medium ">
+    <div class="hidden lg:hidden-none  lg:flex gap-4 text-sm font-medium ">
         <a class="  no-underline text-[#424247]" href=""> <span class="text-red-600">Home</span></a>
         <a class="no-underline text-[#424247]" href="">About</a>
         <a class="no-underline text-[#424247]" href="">Pages</a>
@@ -50,14 +60,14 @@
         <a class="no-underline text-[#424247]" href="">Contact</a>
     </div>
     <div class="flex gap-3 items-center">
-        <i class=" fa-solid fa-magnifying-glass "></i>
+        <i class="hidden lg:hidden-none lg:flex fa-solid fa-magnifying-glass "></i>
         <button class="btn btn-primary bg-[#FF4240] text-[#FFF] border-none">
             Get Ticket
         </button>
     </div>
 </nav>
 <!-- banner Section -->
-<div class="relative border-b-2 border-dashed border-gray-400 py-10 my-10">
+<div class="relative border-b-2 border-dashed border-gray-300 py-10 my-10">
     <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./Images/1.png" class="w-full" />
@@ -89,7 +99,27 @@
 </div>
    </header>
    <main  class="container mx-auto bg-[#FFF]">
-
+    <!-- Professional Hockey Club Section-->
+    <section class="text-center pb-5 border-b-2 border-dashed border-gray-300 my-10">
+        <h2 class="text-[#131318] text-3xl font-extrabold mb-4">Professional Hockey Club</h2>
+        <p  class="text-xs font-medium">With ten men’s teams, six ladies teams, a mixed side, a range of youth teams, <br>various touring sides and Back to Hockey sessions,<br> Working Hockey Club offers hockey to players of any ability.</p>
+    </section>
+    <!-- Progress Percentage Circles-->
+    <section class="flex">
+        <div>
+            <div class="radial-progress text-red-500 font-bold" style="--value:87;" role="progressbar">87%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-green-500 font-bold" style="--value:95;" role="progressbar">95%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-yellow-500 font-bold" style="--value:90;" role="progressbar">90%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-blue-500 font-bold " style="--value:80;" role="progressbar">80%</div>
+        </div>
+        
+    </section>
    </main>
    <footer>
 
